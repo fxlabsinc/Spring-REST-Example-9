@@ -47,6 +47,16 @@ jobs:
       - V1
     regions: FXLabs/US_WEST_1
     cron: '0 30 * ? * *'
-    issueTracker: Jawbone/TEST-GitHub-Issues
-    #notifications:
-    #  - FXLabs/Amjad-Slack
+    issueTracker: 
+      name: Dev-IssueTracker
+      # e.g. https://github.com/shoukathmd/courseapo
+      url: <<changeme>>
+      account: Default_GitHub
+    notifications: 
+      - name: Dev-Slack-Notification
+        channel: <<changeme>>
+        account: Default_Slack
+      - name: Dev-Email-Notification
+        # enter your email
+        to: <<changeme>>
+        account: Default_Email
